@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: black;
+}
+
+.container{
+    background-color: black;
+}
+
+
+
+nav{
+    
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+nav .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 80px;
+    /* text-transform: unset; */
+    font-weight: 700;
+    margin-left: 34%;   
+}
+nav ul li{
+    display: inline-block;
+    margin: 50px;
+    margin-left: 19%;
+    margin-top: 10%;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 45%;
+    background: rgb(255, 230, 0);
+    padding: 20%;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+.content .images {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    gap: 5em;
+}
+
+/* Applique un zoom au survol d'un des produits */
+.parent div:hover{
+    transform: scale(1.1);
+}
+
+/* Style du grid comportant tout les produits */
+.parent {
+    /* Change le comportement de l'élément en parent en grid */
+    display: grid;
+    /* Applique 9 colonnes d'une fraction chacune */
+    grid-template-columns: repeat(9, 1fr);
+    /* Applique 14 lignes d'une fraction chacune */
+    grid-template-rows: repeat(14, 1fr);
+    /* Supprime l'espacement entre les lignes et les colonnes */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /* Aligne le texte au centre */ 
+    text-align: center;
+    
+}
+
+.parent h2{
+    color: white;
+}
+
+.parent p{
+    color: red;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.parent img{
+    width: 40%;
+}
+
+/* Positionne les produits à l'intérieur du grid */
+.div1 { grid-area: 2 / 2 / 5 / 5; }
+.div2 { grid-area: 6 / 2 / 9 / 5; }
+.div3 { grid-area: 10 / 4 / 13 / 7; }
+.div4 { grid-area: 2 / 6 / 5 / 9; }
+.div5 { grid-area: 6 / 6 / 9 / 9; }

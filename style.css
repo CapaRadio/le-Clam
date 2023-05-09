@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+ body{
+    background: #fe0202;
+    /* linear-gradient() pour melanger deux couleur */
+    height: 100vh;
+    width: 100%;
+    
+}
+
+#clam-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* body::after{
+    content:'' ;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.914);
+    /* background: url(imageClam/téléchargement.jpg);
+    background-repeat: no-repeat; */
+    /* position: absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 70% ); */
+    /* clip-path: circle() pour desiner un cercle
+} */
+
+
+.container{
+    width: 80%;
+    height: 70%;
+    background: rgba(9, 0, 0, 0.984);
+    border-radius: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+nav .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 80px;
+    /* text-transform: unset; */
+    font-weight: 700;
+    margin-top: 2%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgb(254, 7, 7);
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.content .text {
+    color: white;
+    width: 40%;
+}
+.content .text h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+.content .text p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+.content .image{
+    width:70%;
+    margin-left:40%;
+}
+.content .image img{
+    width: 900px;
+    margin-left: 18%;
+}
+
+#reseaux-sociaux{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#reseaux-sociaux div{
+    background-color: black;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    bottom: 0;
+    justify-content:space-around;
+    align-items: center; 
+}
+
+#reseaux-sociaux img{
+    width: 70px;
+}
+
+@media (min-width:450px) and (max-width:1200px){
+    .content .image img{
+        width: 520px;  
+    }
+}
+@media (max-width:950px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.content .image .content .text{
+    width: 80%;
+}

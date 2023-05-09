@@ -1,0 +1,62 @@
+*{
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    width: 1280px;
+    height: 700px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.horaire p{
+    color: white;
+    font-size: 3em;
+}
+#avis-clients{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#avis-clients img{
+    width: 5em;
+}
+
+.photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin: 100px 0;
+
+}
+
+.photo img{
+    width: 35em;
+}
+#google {
+    width:10% ;
+}
